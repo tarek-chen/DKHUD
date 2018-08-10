@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+HUD.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)buttonClicked:(UIButton *)sender {
+    
+    [self showMessage:@"动物园里有小猴几🐒、大脑斧🐯还有小西几🦁️小脑许🐭"];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
